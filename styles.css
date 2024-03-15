@@ -1,0 +1,104 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+  :root {
+  --gray-00: #ffffff;
+  --gray-05: #f5f6f7;
+  --gray-15: #d0d0d5;
+  --gray-75: #3b3b4f;
+  --gray-85: #1b1b32;
+  --gray-90: #0a0a23;
+  --blue-50: #198eee;
+  --error: #a94442;
+  --danger-color: #850000;
+  --danger-background: #ffadad;
+}
+
+
+body {
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  background-color: var(--gray-85);
+  height: 100vh;
+  font-size: 10px;
+}
+
+
+main {
+  width: min(100vw , 35rem);
+  margin: 4rem auto  0;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.4rem;
+font-weight: 600;
+  color: var(--gray-00);
+  font-family: 'Castoro Titling';
+}
+
+.container {
+  max-width: 32rem;
+  margin: 2rem auto;
+  color: var(--gray-00);
+  background-color: var(--gray-75);
+  border: 3px solid var(--gray-00);
+  text-align: center;
+}
+
+form {
+  min-height: 16rem;
+  padding: 2rem;
+  font-size: 1.5rem;
+}
+
+label {
+  color: var(--gray-00);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+input {
+  background-color: var(--gray-90);
+  width: 90%;
+  text-align: left;
+  padding: 0.5rem 1rem;
+  font-size: 2.5rem;
+  color: var(--gray-00);
+}
+
+button {
+  background-image:  linear-gradient(#fecc4c, #ffac33);
+  height: 3.75rem;
+  font-size: inherit;
+  /* background-color: #fecc4c; */
+  border: 3px solid #feac32;
+  margin: 1.25rem auto;
+  min-width: 90%;
+}
+
+
+#output {
+  padding: 1rem;
+  font-size: 2.5rem;
+}
+
+.hidden {
+  display: none;
+  height: 0;
+  width: 0;
+}
+
+#error {
+  font-size: 2rem;
+  background-color: var(--danger-background);
+  color: var(--danger-color);
+  border-color: var(--danger-color);
+  padding: 1rem;
+    
+}
